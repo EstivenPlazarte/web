@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <style>
+         header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #252525;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu li:hover > a {
+    background-color: #1bbeb4;
+    border-radius: 4px;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #252525;
+    display: none;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sub-menu a:hover {
+    background-color: #1bbeb4;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-info img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-info .user-details {
+            flex: 1;
+        }
+        .user-details h2 {
+            margin: 0;
+            color: #1a73e8;
+        }
+        .user-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-edit-profile {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-edit-profile:hover {
+            background-color: #0b59b1;
+        }
+    </style>
+</head>
+<header>
+    <h1>PrintMágico</h1>
+        <nav>
+            <ul class="nav-menu">
+                
+                <li><a href="formulario de inicio de secuion y loguuin/index.html">Registro</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    
+                </li>
+                <li><a href="contacto.php">Contactanos</a></li>
+                <li><a href="carrito.php">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="container">
+        <h1>Perfil de Usuario</h1>
+        <div class="profile-info">
+            <img src="perfil.jpeg" alt="Avatar del usuario">
+            <div class="user-details">
+                <h2>Josibel Chamba</h2>
+                <p>Email: JosibelChanba@gmail.com</p>
+                <p>Teléfono: +123456789</p>
+                <p>Dirección: Babahoyo, Ecuador</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="btn-edit-profile" onclick="editProfile()">Editar Perfil</button>
+        </div>
+    </div>
+
+    <script>
+        function editProfile() {
+            // Aquí puedes redirigir al usuario a la página de edición de perfil
+            window.location.href = 'editper.html';
+        }
+    </script>
+</body>
+</html>

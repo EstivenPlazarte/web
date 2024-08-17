@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <style>
+        header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #252525;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu li:hover > a {
+    background-color: #1bbeb4;
+    border-radius: 4px;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #252525;
+    display: none;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sub-menu a:hover {
+    background-color: #1bbeb4;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn-save-profile {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-save-profile:hover {
+            background-color: #0b59b1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PrintMágico</h1>
+            <nav>
+                <ul class="nav-menu">
+                    
+                    <li><a href="formulario de inicio de secuion y loguuin/index.html">Registro</a></li>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                        
+                    </li>
+                    <li><a href="notificaciones.html">Notificaciones</a></li>
+                    <li><a href="mensajes.html">Mensajes</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <h1>Editar Perfil</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" value="NombreUsuario123" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="usuario@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" name="phone" value="+123456789" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Dirección:</label>
+                <textarea id="address" name="address" rows="4" required>City, Country</textarea>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="btn-save-profile">Guardar Cambios</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

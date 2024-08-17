@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.product {
+    display: flex;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    border: 1px solid #007bff; /* Borde del botón */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave para cambios */
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    border-color: #0056b3; /* Color del borde al pasar el mouse */
+    color: #ffffff; /* Color del texto al pasar el mouse */
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product h2 {
+    margin: 0;
+    color: #333;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.product button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background: #0056b3;
+}
+
+#cart {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#cart .buy-card {
+    margin: 10px 0;
+}
+
+#cart .buy-card div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cart .buy-card div img {
+    width: 50px;
+    height: auto;
+}
+
+#cart .buy-card div p {
+    margin: 0;
+    color: #666;
+}
+
+#cart .buy-card div span {
+    color: red;
+    cursor: pointer;
+}
+
+#cart #vaciar_carrito,
+#cart button {
+    padding: 10px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#cart #vaciar_carrito:hover,
+#cart button:hover {
+    background: #c82333;
+}
+
+#cart-count {
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}

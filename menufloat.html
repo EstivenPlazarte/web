@@ -1,0 +1,86 @@
+<style>
+    header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: #252525;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu li:hover > a {
+    background-color: #1bbeb4;
+    border-radius: 4px;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #252525;
+    display: none;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin: 0;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sub-menu a:hover {
+    background-color: #1bbeb4;
+}
+</style>
+<header>
+    <h1>PrintMágico</h1>
+        <nav>
+            <ul class="nav-menu">
+                
+                <li><a href="formulario de inicio de secuion y loguuin/index.html">Registro</a></li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                    
+                </li>
+                <li><a href="notificaciones.html">Notificaciones</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+            </ul>
+        </nav>
+    </header>
